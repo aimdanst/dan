@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>STOCKTAKING APP</title>
+</head>
+<body>
+  <iframe 
+    src="https://script.google.com/macros/s/AKfycbxXP4q9ErWZ5RqX0z9wBLJnSeo2Hc12-EaSH43P3EFHJoKNoWyRvLbgCy9Rh1Ljg7wUyw/exec"
+    width="100%"
+    height="100%"
+    allowfullscreen="true"
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+  </iframe>
+
+  <script>
+    window.onload = function() {
+      document.querySelector('iframe')
+        .requestFullscreen()
+        .catch((err) => {
+          console.error('Error attempting to enable full-screen mode:', err.message);
+        });
+    };
+  </script>
+</body>
+</html>
